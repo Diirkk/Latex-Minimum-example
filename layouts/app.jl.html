@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <% Stipple.sesstoken() %>
+    <title>Hello Genie</title>
+    <% Genie.Assets.favicon_support() %>
+    <link rel="stylesheet" href="/css/grapes.css">
+    <link rel="stylesheet" href="/css/app.css">
+
+  </head>
+  <body>
+    <% page(model, partial = true, [@yield]) %>
+    <script src="/js/app.js" defer></script>
+
+    <script type="text/javascript" id="MathJax-script" defer
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+  </script>
+  </body>
+</html>
